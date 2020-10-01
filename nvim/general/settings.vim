@@ -33,6 +33,10 @@ set clipboard=unnamedplus               " Copy paste between vim and everything 
 "set autochdir                           " Your working directory will always be the same as your working directory
 set completeopt=menuone,noinsert,noselect " Remove autoinsert from autocomplete
 
+autocmd VimEnter * NERDTree             " Open NERDTree
+autocmd VimEnter * wincmd p             " Autofocus editor
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif "AutoClose NerdTree
+
 au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm alternatively you can run :source $MYVIMRC
 
 " You can't stop me

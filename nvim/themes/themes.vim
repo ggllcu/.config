@@ -1,1 +1,1 @@
-autocmd vimenter * colorscheme gruvbox
+" autocmd vimenter * colorscheme gruvbox
