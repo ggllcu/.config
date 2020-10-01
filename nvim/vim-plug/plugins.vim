@@ -11,5 +11,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 	Plug 'ms-jpq/chadtree', {'branch': 'chad', 'do': ':UpdateRemotePlugins'}
   Plug 'neovim/nvim-lspconfig'
   Plug 'nvim-lua/completion-nvim'
+  Plug 'morhetz/gruvbox'
+  Plug 'mattn/emmet-vim'
 
 call plug#end()

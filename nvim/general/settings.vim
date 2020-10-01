@@ -2,6 +2,9 @@
 let g:mapleader = "\<Space>"
 
 syntax enable                           " Enables syntax highlighing
+filetype plugin on
+set path+=**                            " Search in all subdirectories
+set wildmenu
 set hidden                              " Required to keep multiple buffers open multiple buffers
 set encoding=utf-8                      " The encoding displayed
 set fileencoding=utf-8                  " The encoding written to file
