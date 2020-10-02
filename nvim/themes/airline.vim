@@ -16,5 +16,5 @@ let g:airline_theme = 'onedark'
 " Always show tab
 set showtabline=2
 
-" We don't need to see things like -- INSERT -- anymoreset 
-noshowmode
+" We don't need to see things like -- INSERT -- anymore
+set noshowmode
