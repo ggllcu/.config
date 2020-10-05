@@ -31,3 +31,5 @@ alias lg_pam_coupon_short="cd ~/Works/pam-core-develop/ && php bin/console pam:c
 
 #Tmux Sessions
 alias lg_tmux_svr="sh ~/.bin/tmux_svr"
+alias lg_tmux_nvim_config="sh ~/.bin/tmux_nvim_config"
+alias lg_tmux_nvim_bin="sh ~/.bin/tmux_nvim_bin"

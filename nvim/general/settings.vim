@@ -32,6 +32,7 @@ set formatoptions-=cro                  " Stop newline continution of comments
 set clipboard=unnamedplus               " Copy paste between vim and everything else
 "set autochdir                           " Your working directory will always be the same as your working directory
 set completeopt=menuone,noinsert,noselect " Remove autoinsert from autocomplete
+let g:user_emmet_leader_key=','
 
 autocmd VimEnter * NERDTree             " Open NERDTree
 autocmd VimEnter * wincmd p             " Autofocus editor
