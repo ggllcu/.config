@@ -4,5 +4,5 @@ source $HOME/.config/nvim/keys/mappings.vim
 source $HOME/.config/nvim/keys/fzf.vim
 source $HOME/.config/nvim/lsp/languages.vim
 source $HOME/.config/nvim/keys/lsp.vim
-source $HOME/.config/nvim/themes/themes.vim
 source $HOME/.config/nvim/themes/airline.vim
+source $HOME/.config/nvim/themes/onedark.vim
