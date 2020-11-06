@@ -17,3 +17,7 @@ nvim/autoload/**
 !zsh
 !zsh/*
 !zsh/**
+
+!fish
+!fish/*
+!fish/**
