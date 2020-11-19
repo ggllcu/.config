@@ -9,6 +9,7 @@ endif
 call plug#begin('~/.config/nvim/autoload/plugged')
 
   Plug 'preservim/nerdtree'
+  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
   Plug 'neovim/nvim-lspconfig'
   Plug 'nvim-lua/completion-nvim'
   "Plug 'morhetz/gruvbox'

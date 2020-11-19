@@ -34,6 +34,7 @@ set autochdir                           " Your working directory will always be 
 set completeopt=menuone,noinsert,noselect " Remove autoinsert from autocomplete
 let g:user_emmet_leader_key=','
 let NERDTreeShowHidden=1
+let g:deoplete#enable_at_startup = 1
 
 au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm alternatively you can run :source $MYVIMRC
 
@@ -46,7 +47,7 @@ set completeopt=menuone,noinsert,noselect
 " Avoid showing message extra message when using completion
 set shortmess+=c
 
-autocmd BufEnter * lua require'completion'.on_attach()
+" autocmd BufEnter * lua require'completion'.on_attach()
 
 " --
 " End
