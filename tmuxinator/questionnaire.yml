@@ -1,7 +1,7 @@
 # /Users/lucaguglielmi/.config/tmuxinator/svr.yml
 
-name: svr
-root: ~/Works/svr-nuxt-storyblok
+name: questionnaire
+root: /home/httpd/questionnaire.bmw
 
 # Optional tmux socket
 # socket_name: foo
@@ -46,17 +46,12 @@ root: ~/Works/svr-nuxt-storyblok
 
 windows:
   - editor:
-      layout: main-vertical
-      # Synchronize all panes of this window, can be enabled before or after the pane commands run.
-      # 'before' represents legacy functionality and will be deprecated in a future release, in favour of 'after'
-      # synchronize: after
+      layout: 
       panes:
-        - vim
-        - npm run dev
-  
+        - nvim
   - git:
-      layout:
+      layout: even-horizontal
       panes:
         - git status
-
+        - nvm install && npm run watch
 

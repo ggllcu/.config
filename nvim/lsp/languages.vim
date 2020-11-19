@@ -1,5 +1,7 @@
-:lua << END
-  require'nvim_lsp'.html.setup{on_attach=require'completion'.on_attach}
-  require'nvim_lsp'.tsserver.setup{on_attach=require'completion'.on_attach}
-  require'nvim_lsp'.vuels.setup{on_attach=require'completion'.on_attach}
-END
+lua <<EOF
+  require'lspconfig'.html.setup{}
+  require'lspconfig'.tsserver.setup{}
+  require'lspconfig'.vuels.setup{}
+  require'lspconfig'.intelephense.setup{}
+EOF
+
