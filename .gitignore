@@ -21,3 +21,7 @@ nvim/autoload/**
 !fish
 !fish/*
 !fish/**
+
+!tmuxinator
+!tmuxinator/*
+!tmuxinator/**
