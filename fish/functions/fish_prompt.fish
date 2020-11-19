@@ -1,1 +1,1 @@
-/Users/lucaguglielmi/.local/share/omf/themes/bobthefish/fish_prompt.fish
+/home/lguglielmi/.local/share/omf/themes/bobthefish/fish_prompt.fish
