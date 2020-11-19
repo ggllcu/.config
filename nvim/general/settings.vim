@@ -37,5 +37,15 @@ let NERDTreeShowHidden=1
 
 au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm alternatively you can run :source $MYVIMRC
 
+" ---------------
+" completion-nvim
+" ---------------
+
+" Set completeopt to have a better completion experience
+set completeopt=menuone,noinsert,noselect
+" Avoid showing message extra message when using completion
+set shortmess+=c
+
+
 " You can't stop me
 cmap w!! w !sudo tee %
