@@ -22,6 +22,9 @@ nvim/autoload/**
 !fish/*
 !fish/**
 
+fish/fish_history
+fish/fishd.dev70
+
 !tmuxinator
 !tmuxinator/*
 !tmuxinator/**
