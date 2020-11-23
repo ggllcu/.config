@@ -6,6 +6,7 @@ set mouse=a                             " Enable your mouse
 set t_Co=256                            " Support 256 colors
 set tabstop=2                           " Insert 2 spaces for a tab
 set shiftwidth=2                        " Change the number of space characters inserted for indentation
+set expandtab
 set smarttab                            " Makes tabbing smarter will realize you have 2 vs 4
 set smartindent                         " Makes indenting smart
 set autoindent                          " Good auto indent
