@@ -57,10 +57,10 @@ nnoremap <silent> gW    <cmd>lua vim.lsp.buf.workspace_symbol()<CR>
 nnoremap <silent> gd    <cmd>lua vim.lsp.buf.declaration()<CR>
 
 " ---
-" NERDTree
+" Fern
 " --- 
 
-nnoremap <leader>1 :NERDTreeToggle<CR>
+nnoremap <leader>1 :Fern . -drawer<CR>
 
 " ---
 " Completion
