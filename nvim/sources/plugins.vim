@@ -13,4 +13,5 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 	Plug 'tpope/vim-commentary'
 	Plug 'christoomey/vim-titlecase'
   Plug 'vimwiki/vimwiki' 
+  Plug 'jiangmiao/auto-pairs'
 call plug#end()
