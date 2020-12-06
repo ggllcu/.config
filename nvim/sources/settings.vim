@@ -14,6 +14,7 @@ set laststatus=0                        " Always display the status line
 set nu rnu                              " Line numbers and relative numbers
 set cursorline                          " Enable highlighting of the current line
 set showtabline=2                       " Always show tabs
+set complete=.,w,b,u,t,i,               " Sources for autocomplete
 
 " ---
 " Emmet
@@ -32,3 +33,10 @@ let NERDTreeShowHidden=1
 set completeopt=menuone,noinsert,noselect	" Set completeopt to have a better completion experience
 set shortmess+=c 			" Avoid showing message extra message when using completion
 
+" ---
+" Vim Wiki
+" ---
+
+set nocompatible
+filetype plugin on
+syntax on

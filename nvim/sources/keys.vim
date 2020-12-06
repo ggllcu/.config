@@ -60,7 +60,14 @@ nnoremap <silent> gd    <cmd>lua vim.lsp.buf.declaration()<CR>
 " Fern
 " --- 
 
-nnoremap <leader>1 :Fern . -drawer<CR>
+nnoremap <leader>1 :Fern . -drawer -toogle <CR>
+nnoremap <leader>2 :Fern . -toogle <CR>
+
+" ---
+" VimWiki
+" --- 
+
+
 
 " ---
 " Completion
