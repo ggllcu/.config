@@ -15,16 +15,28 @@ set nu rnu                              " Line numbers and relative numbers
 set cursorline                          " Enable highlighting of the current line
 set showtabline=2                       " Always show tabs
 set complete=.,w,b,u,t,i,               " Sources for autocomplete
+set hlsearch                            " Highlight matching search patterns
+set incsearch                           " Enable incremental search
+set ignorecase                          " Include matching uppercase words with lowercase search term
+set smartcase                           " Include only uppercase words with uppercase search term
+
+" ---
+" Fern
+" ---
+" let g:fern#disable_default_mappings = 1
+
+" ---
+" Vue
+" ---
+
+let g:vim_vue_plugin_load_full_syntax = 1
+let g:vim_vue_plugin_highlight_vue_attr = 1
+let g:vim_vue_plugin_use_scss = 1
 
 " ---
 " Emmet
 " ---
 let g:user_emmet_leader_key=','
-
-" ---
-" NERDTree
-" ---
-let NERDTreeShowHidden=1
 
 " ---
 " Completion Vim
