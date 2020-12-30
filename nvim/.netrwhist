@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =2
+let g:netrw_dirhistcnt =3
+let g:netrw_dirhist_3='/mnt/c/Users/lguglielmi/Works/svr-nuxt-storyblok'
 let g:netrw_dirhist_2='/Users/lucaguglielmi/.config/nvim/sources'
 let g:netrw_dirhist_1='/home/web/.config/nvim'
 let g:netrw_dirhist_0='/home/web/.config/nvim/vim-plug'
@@ -9,4 +10,3 @@ let g:netrw_dirhist_7='/Users/lucaguglielmi/Works'
 let g:netrw_dirhist_6='/Users/lucaguglielmi/Works/svr-nuxt-storyblok'
 let g:netrw_dirhist_5='/Users/lucaguglielmi/Works/svr-nuxt-storyblok/pages'
 let g:netrw_dirhist_4='/Users/lucaguglielmi/Works/svr-nuxt-storyblok'
-let g:netrw_dirhist_3='/Users/lucaguglielmi/Works/svr-nuxt-storyblok/middleware'

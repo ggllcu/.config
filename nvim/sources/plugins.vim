@@ -8,12 +8,14 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   Plug 'lambdalisue/fern.vim'
   Plug 'LumaKernel/fern-mapping-fzf.vim'
 
-	Plug 'joshdick/onedark.vim'
-  Plug 'morhetz/gruvbox'
+  Plug 'sheerun/vim-polyglot'
+  Plug 'phanviet/vim-monokai-pro'
+
 	Plug 'mattn/emmet-vim'
 
-	Plug 'vim-airline/vim-airline'
-	Plug 'vim-airline/vim-airline-themes'
+	" Plug 'vim-airline/vim-airline'
+	" Plug 'vim-airline/vim-airline-themes'
+  Plug 'itchyny/lightline.vim'
 	Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 	Plug 'junegunn/fzf.vim'
 	Plug 'tpope/vim-surround'
@@ -22,4 +24,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   Plug 'vimwiki/vimwiki' 
   Plug 'jiangmiao/auto-pairs'
   Plug 'alvan/vim-closetag'
+
+  Plug 'dbeniamine/cheat.sh-vim'
 call plug#end()

@@ -20,6 +20,8 @@ set incsearch                           " Enable incremental search
 set ignorecase                          " Include matching uppercase words with lowercase search term
 set smartcase                           " Include only uppercase words with uppercase search term
 
+syntax on
+
 " ---
 " Fern
 " ---
@@ -51,4 +53,3 @@ set shortmess+=c 			" Avoid showing message extra message when using completion
 
 set nocompatible
 filetype plugin on
-syntax on
