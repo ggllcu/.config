@@ -29,6 +29,8 @@ Plug 'kyazdani42/nvim-web-devicons' " for file icons
 Plug 'kyazdani42/nvim-tree.lua'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-commentary'
 call plug#end()
 
 colorscheme gruvbox
