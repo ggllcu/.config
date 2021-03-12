@@ -8,4 +8,4 @@ source $OMF_PATH/init.fish
 set -gx EDITOR nvim
 set theme_color_scheme gruvbox
 set PATH /home/linuxbrew/.linuxbrew/bin/ $PATH
-
+set PATH /home/lg/julia-1.5.3/bin/ $PATH
