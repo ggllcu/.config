@@ -1,6 +1,6 @@
 set expandtab
-set shiftwidth=2
-set softtabstop=2
+set shiftwidth=4
+set softtabstop=4
 set smartindent
 
 set exrc
@@ -14,10 +14,10 @@ set scrolloff=8
 set noshowmode
 set signcolumn=yes
 
-set cmdheight=2
+set cmdheight=1
 
 set completeopt=menuone,noselect
-let g:completion_matching_strategy_list = ['exact', 'substring', 'fuzzy']
+" let g:completion_matching_strategy_list = ['exact', 'substring', 'fuzzy']
 
 call plug#begin('~/.vim/plugged')
 Plug 'nvim-lua/popup.nvim'
@@ -35,23 +35,28 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 Plug 'mattn/emmet-vim'
 Plug 'mhartington/oceanic-next'
+Plug 'jiangmiao/auto-pairs'
 call plug#end()
 
-lua require("gu")
+lua require("lg")
 
 filetype plugin indent on
-set t_Co=256
 set cursorline
 
-if (has("termguicolors"))
- set termguicolors
-endif
+" if (has("termguicolors"))
+"  set termguicolors
+" endif
+
+set t_Co=256
 
 " Theme
 syntax enable
 colorscheme OceanicNext
 
 hi Normal guibg=NONE ctermbg=NONE
+hi LineNr guibg=NONE ctermbg=NONE
+hi SignColumn guibg=NONE ctermbg=NONE
+hi EndOfBuffer guibg=NONE ctermbg=NONE
 
 let mapleader = " "
 
@@ -60,6 +65,7 @@ nnoremap <C-k> :cnext<CR>zz
 nnoremap <C-j> :cprev<CR>zz
 nnoremap <leader>k :lnext<CR>zz
 nnoremap <leader>j :lprev<CR>zz
+
 "Global list
 nnoremap <C-q> :call ToggleQFList(1)<CR> 
 nnoremap <leader>q :call ToggleQFList(0)<CR>
@@ -87,13 +93,3 @@ let g:user_emmet_leader_key=','
 inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
-" use <Tab> as trigger keys
-imap <Tab> <Plug>(completion_smart_tab)
-imap <S-Tab> <Plug>(completion_smart_s_tab)
-
-" Nvim Compe 
-inoremap <silent><expr> <C-Space> compe#complete()
-inoremap <silent><expr> <CR>      compe#confirm('<CR>')
-inoremap <silent><expr> <C-e>     compe#close('<C-e>')
-inoremap <silent><expr> <C-f>     compe#scroll({ 'delta': +4 })
-inoremap <silent><expr> <C-d>     compe#scroll({ 'delta': -4 })

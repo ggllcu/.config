@@ -31,4 +31,3 @@ require'compe'.setup {
     luasnip = true;
   };
 }
-
