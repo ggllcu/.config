@@ -31,7 +31,7 @@ Plug( 'tpope/vim-commentary')
 Plug( 'mattn/emmet-vim')
 Plug( 'mhartington/oceanic-next')
 Plug( 'jiangmiao/auto-pairs')
--- Plug( 'ray-x/lsp_signature.nvim')
+Plug( 'ray-x/lsp_signature.nvim')
 
 vim.call('plug#end')
 
