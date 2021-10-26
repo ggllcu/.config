@@ -13,6 +13,7 @@
 nvim/autoload/
 nvim/autoload/*
 nvim/autoload/**
+nvim/plugged
 
 !omf
 !omf/*
