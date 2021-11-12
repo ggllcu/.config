@@ -9,6 +9,8 @@ Plug('nvim-telescope/telescope.nvim')
 Plug('nvim-telescope/telescope-fzy-native.nvim')
 
 Plug('nvim-treesitter/nvim-treesitter')
+Plug('nvim-treesitter/playground')
+
 
 Plug('neovim/nvim-lspconfig')
 
@@ -16,7 +18,7 @@ Plug('hrsh7th/cmp-nvim-lsp' )
 Plug('hrsh7th/cmp-nvim-lua' )
 Plug('hrsh7th/cmp-buffer' )
 Plug('hrsh7th/cmp-path' )
-Plug('tamago324/cmp-zsh' )
+-- Plug('tamago324/cmp-zsh' )
 Plug('hrsh7th/nvim-cmp' )
 
 Plug('onsails/lspkind-nvim' )
@@ -34,6 +36,8 @@ Plug('jiangmiao/auto-pairs')
 Plug('ray-x/lsp_signature.nvim')
 
 Plug('akinsho/bufferline.nvim')
+
+Plug('ray-x/lsp_signature.nvim')
 
 vim.call('plug#end')
 
@@ -57,7 +61,7 @@ set.errorbells = false
 set.incsearch = true
 
 -- Set Scroll Offset
-set.scrolloff = 8
+set.scrolloff = 999
 
 -- Always show SignColumn
 set.signcolumn = "yes"
@@ -67,6 +71,9 @@ set.completeopt = "menu,menuone,noselect"
 
 -- Highlight cursorline
 set.cursorline = true
+
+-- Set terminal colors
+set.termguicolors = true
 
 -- Set colorscheme
 vim.cmd[[
@@ -83,6 +90,7 @@ vim.g.mapleader = ' '
 
 -- Use comma as a the leader key for emmet
 vim.g.user_emmet_leader_key = ','
+vim.g.user_emmet_mode = 'a'
 
 require("lg")
 vim.cmd 'source ~/.config/nvim/lua/lg/keymaps.vim'

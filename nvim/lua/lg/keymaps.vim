@@ -17,3 +17,6 @@ nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
+
+" Close buffer without close window
+nnoremap <leader>w :bp<bar>sp<bar>bn<bar>bd<CR>
