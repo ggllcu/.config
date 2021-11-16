@@ -31,6 +31,7 @@ Plug('kyazdani42/nvim-tree.lua')
 Plug('tpope/vim-surround')
 Plug('tpope/vim-commentary')
 Plug('mattn/emmet-vim')
+-- Plug('projekt0n/github-nvim-theme'
 Plug('mhartington/oceanic-next')
 Plug('jiangmiao/auto-pairs')
 Plug('ray-x/lsp_signature.nvim')
@@ -46,8 +47,8 @@ local set = vim.opt
 
 -- Set the behavior of tab
 set.expandtab = true
-set.shiftwidth = 4
-set.softtabstop = 4
+set.shiftwidth = 2
+set.softtabstop = 2
 set.smartindent = true
 
 -- Set line numbers
@@ -61,7 +62,7 @@ set.errorbells = false
 set.incsearch = true
 
 -- Set Scroll Offset
-set.scrolloff = 999
+set.scrolloff = 8
 
 -- Always show SignColumn
 set.signcolumn = "yes"
