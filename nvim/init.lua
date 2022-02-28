@@ -11,6 +11,7 @@ Plug('nvim-telescope/telescope-fzy-native.nvim')
 Plug('nvim-treesitter/nvim-treesitter')
 Plug('nvim-treesitter/playground')
 
+Plug('mhartington/formatter.nvim')
 
 Plug('neovim/nvim-lspconfig')
 
@@ -31,14 +32,17 @@ Plug('kyazdani42/nvim-tree.lua')
 Plug('tpope/vim-surround')
 Plug('tpope/vim-commentary')
 Plug('mattn/emmet-vim')
--- Plug('projekt0n/github-nvim-theme'
-Plug('mhartington/oceanic-next')
+-- Plug('mhartington/oceanic-next')
+Plug('EdenEast/nightfox.nvim')
 Plug('jiangmiao/auto-pairs')
 Plug('ray-x/lsp_signature.nvim')
 
 Plug('akinsho/bufferline.nvim')
 
 Plug('ray-x/lsp_signature.nvim')
+
+-- Lateral window for register
+Plug('junegunn/vim-peekaboo')
 
 vim.call('plug#end')
 
@@ -61,6 +65,12 @@ set.errorbells = false
 -- Set incremental search
 set.incsearch = true
 
+-- Search also for capital match
+set.smartcase = true
+
+-- Remove Search Highlight
+set.hlsearch = true
+
 -- Set Scroll Offset
 set.scrolloff = 8
 
@@ -78,7 +88,7 @@ set.termguicolors = true
 
 -- Set colorscheme
 vim.cmd[[
-colorscheme OceanicNext
+colorscheme nightfox
 
 hi Normal guibg=NONE ctermbg=NONE
 hi LineNr guibg=NONE ctermbg=NONE

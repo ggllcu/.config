@@ -1,3 +1,6 @@
-require('lualine').setup()
+require('lualine').setup{
+  options = {
+    theme = "nightfox"
+  }
+}
 
-options = {theme = 'oceanic-next'}
