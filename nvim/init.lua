@@ -34,6 +34,7 @@ Plug('tpope/vim-commentary')
 Plug('mattn/emmet-vim')
 -- Plug('mhartington/oceanic-next')
 Plug('EdenEast/nightfox.nvim')
+
 Plug('jiangmiao/auto-pairs')
 Plug('ray-x/lsp_signature.nvim')
 
@@ -43,6 +44,8 @@ Plug('ray-x/lsp_signature.nvim')
 
 -- Lateral window for register
 Plug('junegunn/vim-peekaboo')
+
+Plug('vimwiki/vimwiki')
 
 vim.call('plug#end')
 
