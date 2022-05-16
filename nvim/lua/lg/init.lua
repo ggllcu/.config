@@ -1,6 +1,6 @@
 require("lg.lsp")
 require("lg.telescope")
-require("lg.treesitter")
+-- require("lg.treesitter")
 require("lg.lualine")
 require("lg.nvim-tree")
 require("lg.bufferline")

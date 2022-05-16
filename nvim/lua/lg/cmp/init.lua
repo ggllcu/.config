@@ -13,6 +13,22 @@ cmp.setup {
             i = cmp.mapping.abort(),
             c = cmp.mapping.close(),
         }),
+        ['<Tab>'] = cmp.mapping(function(fallback)
+          if cmp.visible() then
+            cmp.select_next_item()
+            return
+          end
+          fallback()
+        end
+        , { 'i', 'c' }),
+        ['<S-Tab>'] = cmp.mapping(function(fallback)
+          if cmp.visible() then
+            cmp.select_prev_item()
+            return
+          end
+          fallback()
+        end
+        , { 'i', 'c' }),
 
         ['<CR>'] = cmp.mapping.confirm({ select = true  }),
     },
