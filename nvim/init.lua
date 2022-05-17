@@ -43,9 +43,15 @@ Plug('akinsho/bufferline.nvim')
 Plug('ray-x/lsp_signature.nvim')
 
 -- Lateral window for register
-Plug('junegunn/vim-peekaboo')
+-- Plug('junegunn/vim-peekaboo')
 
 Plug('vimwiki/vimwiki')
+
+Plug('folke/which-key.nvim')
+
+Plug('numToStr/Comment.nvim')
+
+Plug('nvim-telescope/telescope-file-browser.nvim')
 
 vim.call('plug#end')
 
