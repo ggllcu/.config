@@ -4,6 +4,7 @@ local Plug = vim.fn['plug#']
 vim.call('plug#begin', '~/.config/nvim/plugged')
 
 Plug('nvim-lua/popup.nvim') -- required by telescope
+
 Plug('nvim-lua/plenary.nvim') -- required by telescope
 Plug('nvim-telescope/telescope.nvim')
 Plug('nvim-telescope/telescope-fzy-native.nvim')
@@ -11,7 +12,7 @@ Plug('nvim-telescope/telescope-fzy-native.nvim')
 Plug('nvim-treesitter/nvim-treesitter')
 Plug('nvim-treesitter/playground')
 
-Plug('mhartington/formatter.nvim')
+-- Plug('mhartington/formatter.nvim')
 
 Plug('neovim/nvim-lspconfig')
 
@@ -19,7 +20,6 @@ Plug('hrsh7th/cmp-nvim-lsp' )
 Plug('hrsh7th/cmp-nvim-lua' )
 Plug('hrsh7th/cmp-buffer' )
 Plug('hrsh7th/cmp-path' )
--- Plug('tamago324/cmp-zsh' )
 Plug('hrsh7th/nvim-cmp' )
 
 Plug('onsails/lspkind-nvim' )
@@ -30,7 +30,6 @@ Plug('kyazdani42/nvim-web-devicons')  -- for file icons
 Plug('kyazdani42/nvim-tree.lua')
 
 Plug('tpope/vim-surround')
-Plug('tpope/vim-commentary')
 Plug('mattn/emmet-vim')
 -- Plug('mhartington/oceanic-next')
 Plug('EdenEast/nightfox.nvim')
@@ -40,18 +39,16 @@ Plug('ray-x/lsp_signature.nvim')
 
 Plug('akinsho/bufferline.nvim')
 
-Plug('ray-x/lsp_signature.nvim')
-
 -- Lateral window for register
 -- Plug('junegunn/vim-peekaboo')
 
 Plug('vimwiki/vimwiki')
 
-Plug('folke/which-key.nvim')
-
 Plug('numToStr/Comment.nvim')
 
 Plug('nvim-telescope/telescope-file-browser.nvim')
+
+Plug('folke/which-key.nvim')
 
 vim.call('plug#end')
 
