@@ -8,6 +8,7 @@ require("lg.cmp")
 require("lg.lspsignature")
 require("lg.which-key")
 require("lg.comment")
+require("lg.indent_blankline")
 
 vim.cmd 'source ~/.config/nvim/lua/lg/telescope/keymaps.vim'
 vim.cmd 'source ~/.config/nvim/lua/lg/nvim-tree/keymaps.vim'

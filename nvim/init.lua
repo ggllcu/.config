@@ -50,6 +50,13 @@ Plug('nvim-telescope/telescope-file-browser.nvim')
 
 Plug('folke/which-key.nvim')
 
+Plug('lukas-reineke/indent-blankline.nvim')
+
+-- Plug('morhetz/gruvbox')
+
+Plug 'tjdevries/colorbuddy.vim'
+Plug 'tjdevries/gruvbuddy.nvim'
+
 vim.call('plug#end')
 
 -- Set neovim settings
@@ -94,7 +101,6 @@ set.termguicolors = true
 
 -- Set colorscheme
 vim.cmd[[
-colorscheme nightfox
 
 hi Normal guibg=NONE ctermbg=NONE
 hi LineNr guibg=NONE ctermbg=NONE
@@ -109,5 +115,7 @@ vim.g.mapleader = ' '
 vim.g.user_emmet_leader_key = ','
 vim.g.user_emmet_mode = 'a'
 
+
 require("lg")
+require('colorbuddy').colorscheme('gruvbuddy')
 vim.cmd 'source ~/.config/nvim/lua/lg/keymaps.vim'
