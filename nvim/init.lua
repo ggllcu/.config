@@ -22,6 +22,9 @@ Plug('hrsh7th/cmp-buffer' )
 Plug('hrsh7th/cmp-path' )
 Plug('hrsh7th/nvim-cmp' )
 
+Plug('L3MON4D3/LuaSnip')
+Plug('saadparwaiz1/cmp_luasnip')
+
 Plug('onsails/lspkind-nvim' )
 
 Plug('hoob3rt/lualine.nvim')
@@ -30,7 +33,7 @@ Plug('kyazdani42/nvim-web-devicons')  -- for file icons
 Plug('kyazdani42/nvim-tree.lua')
 
 Plug('tpope/vim-surround')
-Plug('mattn/emmet-vim')
+-- Plug('mattn/emmet-vim')
 -- Plug('mhartington/oceanic-next')
 Plug('EdenEast/nightfox.nvim')
 
