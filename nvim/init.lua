@@ -35,7 +35,12 @@ Plug('kyazdani42/nvim-tree.lua')
 Plug('tpope/vim-surround')
 -- Plug('mattn/emmet-vim')
 -- Plug('mhartington/oceanic-next')
-Plug('EdenEast/nightfox.nvim')
+-- Plug('EdenEast/nightfox.nvim')
+-- Plug('catppuccin/nvim')
+-- Plug('morhetz/gruvbox')
+-- Plug 'tjdevries/colorbuddy.vim'
+-- Plug 'tjdevries/gruvbuddy.nvim'
+Plug('rmehri01/onenord.nvim')
 
 Plug('jiangmiao/auto-pairs')
 Plug('ray-x/lsp_signature.nvim')
@@ -54,12 +59,10 @@ Plug('nvim-telescope/telescope-file-browser.nvim')
 Plug('folke/which-key.nvim')
 
 Plug('lukas-reineke/indent-blankline.nvim')
+Plug('liuchengxu/vista.vim')
 
-Plug('catppuccin/nvim')
--- Plug('morhetz/gruvbox')
+-- Plug('junegunn/goyo.vim')
 
--- Plug 'tjdevries/colorbuddy.vim'
--- Plug 'tjdevries/gruvbuddy.nvim'
 
 vim.call('plug#end')
 
@@ -105,7 +108,7 @@ set.termguicolors = true
 
 -- Set colorscheme
 vim.cmd[[
-colorscheme catppuccin
+colorscheme onenord
 
 hi Normal guibg=NONE ctermbg=NONE
 hi LineNr guibg=NONE ctermbg=NONE
