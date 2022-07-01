@@ -11,3 +11,5 @@ set PATH /home/linuxbrew/.linuxbrew/bin/ $PATH
 set PATH /home/lg/julia-1.5.3/bin/ $PATH
 #set -q GHCUP_INSTALL_BASE_PREFIX[1]; or set GHCUP_INSTALL_BASE_PREFIX $HOME ; test -f /home/lg/.ghcup/env ; and set -gx PATH $HOME/.cabal/bin /home/lg/.ghcup/bin $PATH # ghcup-env
 set -q GHCUP_INSTALL_BASE_PREFIX[1]; or set GHCUP_INSTALL_BASE_PREFIX $HOME ; set -gx PATH $HOME/.cabal/bin /home/lg/.ghcup/bin $PATH # ghcup-env
+
+zoxide init fish | source
