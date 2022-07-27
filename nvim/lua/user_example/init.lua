@@ -20,6 +20,19 @@ local config = {
   -- Set colorscheme
   colorscheme = "default_theme",
 
+  -- Override highlight groups in any theme
+  highlights = {
+    -- duskfox = { -- a table of overrides
+    --   Normal = { bg = "#000000" },
+    -- },
+    default_theme = function(highlights) -- or a function that returns one
+      local C = require "default_theme.colors"
+
+      highlights.Normal = { fg = C.fg, bg = C.bg }
+      return highlights
+    end,
+  },
+
   -- set vim options here (vim.<first_key>.<second_key> =  value)
   options = {
     opt = {
@@ -37,13 +50,6 @@ local config = {
     colors = {
       fg = "#abb2bf",
     },
-    -- Modify the highlight groups
-    highlights = function(highlights)
-      local C = require "default_theme.colors"
-
-      highlights.Normal = { fg = C.fg, bg = C.bg }
-      return highlights
-    end,
     plugins = { -- enable or disable extra plugin highlighting
       aerial = true,
       beacon = false,
@@ -120,7 +126,7 @@ local config = {
       ensure_installed = { "sumneko_lua" },
     },
     packer = {
-      compile_path = vim.fn.stdpath "config" .. "/lua/packer_compiled.lua",
+      compile_path = vim.fn.stdpath "data" .. "/packer_compiled.lua",
     },
   },
 
@@ -170,6 +176,12 @@ local config = {
     servers = {
       -- "pyright"
     },
+    -- easily add or disable built in mappings added during LSP attaching
+    mappings = {
+      n = {
+        -- ["<leader>lf"] = false -- disable formatting keymap
+      },
+    },
     -- add to the server on_attach function
     -- on_attach = function(client, bufnr)
     -- end,
@@ -202,12 +214,22 @@ local config = {
     underline = true,
   },
 
-  -- This function is run last
-  -- good place to configure mappings and vim options
-  polish = function()
-    -- Set key bindings
-    vim.keymap.set("n", "<C-s>", ":w!<CR>")
+  mappings = {
+    -- first key is the mode
+    n = {
+      -- second key is the lefthand side of the map
+      ["<C-s>"] = { ":w!<cr>", desc = "Save File" },
+    },
+    t = {
+      -- setting a mapping to false will disable it
+      -- ["<esc>"] = false,
+    },
+  },
 
+  -- This function is run last
+  -- good place to configuring augroups/autocommands and custom filetypes
+  polish = function()
+    -- Set key binding
     -- Set autocommands
     vim.api.nvim_create_augroup("packer_conf", { clear = true })
     vim.api.nvim_create_autocmd("BufWritePost", {

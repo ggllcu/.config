@@ -5,23 +5,21 @@ local options = astronvim.user_plugin_opts(
   { remote = "origin", branch = "main", channel = "nightly", show_changelog = true }
 )
 
+if astronvim.install.is_stable ~= nil then options.channel = astronvim.install.is_stable and "stable" or "nightly" end
+
 astronvim.updater = { options = options }
 if options.pin_plugins == nil and options.channel == "stable" or options.pin_plugins then
-  local loaded, snapshot = pcall(fn.readfile, fn.stdpath "config" .. "/packer_snapshot")
+  local loaded, snapshot = pcall(fn.readfile, astronvim.install.home .. "/packer_snapshot")
   if loaded then
     loaded, snapshot = pcall(fn.json_decode, snapshot)
     astronvim.updater.snapshot = type(snapshot) == "table" and snapshot or nil
   end
-  if not loaded then
-    vim.api.nvim_err_writeln "Error loading packer snapshot"
-  end
+  if not loaded then vim.api.nvim_err_writeln "Error loading packer snapshot" end
 end
 
 function astronvim.updater.version()
-  local version = git.current_version()
-  if version then
-    astronvim.notify("Version: " .. version)
-  end
+  local version = astronvim.install.version or git.current_version(false)
+  if version then astronvim.notify("Version: " .. version) end
 end
 
 local function attempt_update(target)
@@ -35,6 +33,10 @@ end
 local cancelled_message = { { "Update cancelled", "WarningMsg" } }
 
 function astronvim.updater.update()
+  if not git.is_repo() then
+    astronvim.notify("Updater not available for non-git installations", "error")
+    return
+  end
   for remote, entry in pairs(options.remotes and options.remotes or {}) do
     local url = git.parse_remote_url(entry)
     local current_url = git.remote_url(remote, false)
