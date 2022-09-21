@@ -48,7 +48,7 @@ AstroNvim is an aesthetic and feature-rich neovim config that is extensible and 
 ## ⚡ Requirements
 
 - [Nerd Fonts](https://www.nerdfonts.com/font-downloads)
-- [Neovim 0.7+](https://github.com/neovim/neovim/releases/tag/v0.7.0)
+- [Stable Neovim 0.7+](https://github.com/neovim/neovim/releases/tag/v0.7.0)
 - A clipboard tool is necessary for the integration with the system clipboard (see [`:help clipboard-tool`](https://neovim.io/doc/user/provider.html#clipboard-tool) for supported solutions)
 - Terminal with true color support (for the default theme, otherwise it is dependent on the theme you are using)
 - Optional Requirements:
@@ -59,7 +59,7 @@ AstroNvim is an aesthetic and feature-rich neovim config that is extensible and 
   - [Python](https://www.python.org/) - python repl toggle terminal (`<leader>tp`)
   - [Node](https://nodejs.org/en/) - node repl toggle terminal (`<leader>tn`)
 
-> Note when using default theme: For MacOS, the default terminal does not have true color support. You wil need to use [iTerm2](https://iterm2.com/) or another [terminal emulator](https://gist.github.com/XVilka/8346728#terminal-emulators) that has true color support.
+> Note when using default theme: For MacOS, the default terminal does not have true color support. You will need to use [iTerm2](https://iterm2.com/) or another [terminal emulator](https://gist.github.com/XVilka/8346728#terminal-emulators) that has true color support.
 
 > Note if you are still on Neovim v0.6: You can still install the previous version of AstroNvim that supported. After cloning the repository run `git checkout nvim-0.6` to check out this version. This will no longer be receiving updates.
 
@@ -102,9 +102,10 @@ Run `:AstroUpdate` to get the latest updates from the repository<br>
 ## 🗒️ Links
 
 [AstroNvim Documentation](https://astronvim.github.io/)
+[Core AstroNvim LUA API Documentation](https://astronvim.github.io/AstroNvim/)
 
-- [Basic Usage](https://astronvim.github.io/usage/walkthrough) is given for basic usage
-- [Default Mappings](https://astronvim.github.io/usage/mappings) more about the default key bindings
+- [Basic Usage](https://astronvim.github.io/Basic%20Usage/walkthrough) is given for basic usage
+- [Default Mappings](https://astronvim.github.io/Basic%20Usage/mappings) more about the default key bindings
 - [Default Plugin Configuration](https://astronvim.github.io/configuration/plugin_defaults) more about the provided plugin defaults
 - [Advanced Configuration](https://astronvim.github.io/configuration/config_options) more about advanced configuration
 
