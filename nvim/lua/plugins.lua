@@ -1,7 +1,6 @@
 return require('packer').startup(function(use)
   use 'junegunn/vim-peekaboo'
   use 'tomasr/molokai'
-  use 'preservim/nerdcommenter'
   use 'tpope/vim-fugitive'
   use 'tpope/vim-surround'
   use 'wbthomason/packer.nvim'
@@ -11,7 +10,9 @@ return require('packer').startup(function(use)
   use 'nvim-lua/plenary.nvim' -- resources for other plugins
   use 'neovim/nvim-lspconfig'
   use 'ryanoasis/vim-devicons'
+  use 'nvim-tree/nvim-tree.lua'
   use 'nvim-telescope/telescope.nvim'
+  use 'nvim-telescope/telescope-file-browser.nvim'
   use 'nvim-treesitter/nvim-treesitter'
   use 'michaeljsmith/vim-indent-object'
   use 'onsails/lspkind.nvim'
@@ -20,4 +21,5 @@ return require('packer').startup(function(use)
   use 'hrsh7th/cmp-path'
   use 'hrsh7th/cmp-nvim-lsp-signature-help'
   use 'hrsh7th/nvim-cmp'
+  use 'terrortylor/nvim-comment'
   end)
