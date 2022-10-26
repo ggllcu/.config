@@ -1,5 +1,4 @@
 return require('packer').startup(function(use)
-  use 'junegunn/vim-peekaboo'
   use 'tpope/vim-fugitive'
   use 'tpope/vim-surround'
   use 'wbthomason/packer.nvim'
