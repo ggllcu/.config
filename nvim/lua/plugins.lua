@@ -25,4 +25,5 @@ return require('packer').startup(function(use)
   -- use 'folke/tokyonight.nvim'
   use 'tanvirtin/monokai.nvim'
   use 'nvim-lualine/lualine.nvim'
+  use 'simrat39/symbols-outline.nvim'
   end)

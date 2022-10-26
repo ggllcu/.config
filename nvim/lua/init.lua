@@ -8,6 +8,7 @@ require('lualine').setup { options = {
     component_separators = { left = '', right = ''},
     section_separators = { left = '', right = ''},
 }}
+require("smbols-outline").setup()
 -- vim.cmd[[colorscheme tokyonight-storm]]
 -- require('monokai').setup { palette = require('monokai').pro }
 -- require('onenord').setup()
