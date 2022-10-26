@@ -1,6 +1,5 @@
 return require('packer').startup(function(use)
   use 'junegunn/vim-peekaboo'
-  use 'tomasr/molokai'
   use 'tpope/vim-fugitive'
   use 'tpope/vim-surround'
   use 'wbthomason/packer.nvim'
@@ -22,8 +21,8 @@ return require('packer').startup(function(use)
   use 'hrsh7th/cmp-nvim-lsp-signature-help'
   use 'hrsh7th/nvim-cmp'
   use 'terrortylor/nvim-comment'
-  use 'tanvirtin/monokai.nvim'
   use 'rmehri01/onenord.nvim'
   use 'navarasu/onedark.nvim'
   use 'folke/tokyonight.nvim'
+  use 'tanvirtin/monokai.nvim'
   end)
