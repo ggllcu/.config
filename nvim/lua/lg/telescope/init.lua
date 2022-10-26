@@ -12,10 +12,6 @@ vim.keymap.set('n', '<leader>bb', builtin.buffers, {})
 vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
 vim.keymap.set('n', '<leader>gf', builtin.git_files, {})
 
--- require("telescope.builtin").live_grep {
---     additional_args = function(args) return vim.list_extend(args, { "--hidden", "--no-ignore" }) end,
--- }
-
 require("telescope").load_extension "file_browser"
 
 vim.api.nvim_set_keymap(
