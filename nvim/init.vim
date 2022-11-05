@@ -1,4 +1,8 @@
 set path+=**
+set wildignore+=*/node_modules/*
+set wildignore+=*/.git/*
+set wildignore+=*/vendor/*
+set wildignore+=*/deps/*
 set wildmenu
 set nu rnu
 set cursorline
@@ -26,6 +30,11 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 
+noremap x "_x " do not yank with x
+noremap r "_r " do not yank with r
+noremap + <C-a> " increment
+noremap - <C-x> " decrement
+
 nnoremap <leader>h :split<Space>
 nnoremap <leader>v :vsplit<Space>
 
@@ -45,4 +54,7 @@ set winbar=%=%m\ %f
 lua require('plugins')
 lua require('init')
 
-highlight Normal     ctermbg=NONE guibg=NONE
+colorscheme carbonfox
+
+highlight Normal ctermbg=NONE guibg=NONE
+hi EndOfBuffer guibg=NONE ctermbg=NONE
