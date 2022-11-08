@@ -47,6 +47,10 @@ let g:vimwiki_markdown_link_ext = 1
 let g:taskwiki_markup_syntax = 'markdown'
 let g:markdown_folding = 1
 
+let g:minimap_width = 10
+let g:minimap_auto_start = 1
+let g:minimap_auto_start_win_enter = 1
+
 " Neovim only
 set laststatus=3
 set winbar=%=%m\ %f

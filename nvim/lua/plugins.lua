@@ -2,6 +2,7 @@ return require('packer').startup(function(use)
     use 'tpope/vim-fugitive'
     use 'tpope/vim-surround'
     use 'wbthomason/packer.nvim'
+    use 'wfxr/minimap.vim'
     use {'vimwiki/vimwiki', branch = 'dev'}
 
     -- Neovim only
@@ -23,7 +24,6 @@ return require('packer').startup(function(use)
     use 'terrortylor/nvim-comment'
     use 'EdenEast/nightfox.nvim'
     use 'nvim-lualine/lualine.nvim'
-    use 'simrat39/symbols-outline.nvim'
     use 'windwp/nvim-autopairs'
     use 'windwp/nvim-ts-autotag'
     use 'glepnir/lspsaga.nvim'
@@ -36,8 +36,6 @@ return require('packer').startup(function(use)
     use 'lewis6991/gitsigns.nvim'
     use 'ggandor/leap.nvim'
     use 'ThePrimeagen/harpoon'
-    use {
-        'stevearc/aerial.nvim',
-        config = function() require('aerial').setup() end
-    }
+    use 'simrat39/symbols-outline.nvim'
+    use 'stevearc/aerial.nvim'
 end)
