@@ -31,10 +31,21 @@ local options = {
             n = { ["q"] = require("telescope.actions").close },
         },
     },
+    pickers = {
+        buffers = {
+            mappings = {
+                i = {
+                    ["<c-d>"] = "delete_buffer",
+                }
+            }
+        }
+    }
 }
 
 telescope.setup(options)
+
 require("telescope").load_extension "file_browser"
+
 local builtin = require('telescope.builtin')
 
 vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
@@ -60,6 +71,6 @@ vim.api.nvim_set_keymap(
 vim.api.nvim_set_keymap(
     "n",
     "<space>fc",
-    ":Telescope file_browser path='%:p:h'<CR>",
+    ":Telescope file_browser path=%:p:h<CR>",
     { noremap = true }
 )
